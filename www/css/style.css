@@ -1,0 +1,122 @@
+/* Empty. Add your own CSS if you like */
+#pinPoint {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#edit {
+  margin-right: 50px;
+}
+optgroup {
+  float: left;
+}
+
+option {
+  float: left;
+}
+
+.imgright{
+  float:right;
+  margin-left:10px;
+}
+
+.smalltext {
+  font-size: 16;
+}
+
+.tabs .tab-item .icon {
+  background-repeat: no-repeat;
+  background-position:center;
+  height:100%;
+  width: 100%;
+}
+
+.icon.church {
+  background-image: url('../img/church.png');
+}
+
+.icon.cList {
+  padding: 10px 10px 10px 10px;
+}
+
+#closest {
+     text-align:center;
+     padding: 10px 10px 10px 10px;
+}
+
+#select {
+     text-align:center;
+     padding: 10px 10px 10px 10px;
+}
+
+#refresh {
+  background-color: white;
+  border: 2px solid #80b3ff; /* Green */
+  float: right;
+  margin-right:10px;
+  color: #80b3ff;
+}
+
+#refreshImg {
+  padding-top: 15px;
+}
+
+#home {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+#delete {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.mass {
+  margin-left: 20px;
+}
+
+#mass {
+  border-style: dotted;
+}
+
+#take {
+  display: none;
+}
+
+#choose {
+  margin-bottom: 10px;
+  display: none;
+}
+
+br {
+  margin-left: 20px;
+}
+.prayers {
+  padding-left: 20px;
+}
+
+.header {
+  padding-left: 30px;
+}
+
+.radio {
+  padding: 10px 10px 10px 10px;
+  padding-left: 30px
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    position: relative;
+}
+
+li:hover ul {
+    display: block;
+}

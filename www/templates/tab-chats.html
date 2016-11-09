@@ -1,0 +1,29 @@
+<ion-view title="Add New Church">
+  <ion-content padding="true" ng-controller="CameraCtrl">
+    <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Church Name</span>
+        <input id="newChurchName" type="text" onkeyup="inputChurchName()"placeholder="Church Name">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Latitude</span>
+        <input id="newLatitude" type="text" placeholder="Latitude e.g. 53.197349">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Longititude</span>
+        <input id=newLongitude type="text" placeholder="Longitude e.g. -8.567655">
+      </label>
+      <div class="button-bar">
+        <a id="pinPoint" class="button button-energized icon-right ion-pinpoint" onClick="pinpoint()">Current Location</a>
+      </div>
+      <div class="button-bar">
+        <a class="button button-positive icon-right ion-camera" ng-click="takePhoto()">IMG (Camera)</a>
+        <a class="button button-positive icon-left ion-images" ng-click="choosePhoto()">IMG (Gallery)</a>
+      </div>
+    </div>
+    <div class="button-bar">
+      <a class="button button-assertive" onClick="newChurchDetails()">Submit</a>
+    </div>
+    <!--img id="newChurchImg" ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="text-align: center"--><!--couldn't get this to work properly>
+  </ion-content>
+</ion-view>

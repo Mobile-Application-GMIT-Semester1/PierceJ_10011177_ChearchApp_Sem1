@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- add more libraries -->
+    <script src=”lib/ngstorage/ngStorage.min.js”></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/ng-cordova.min.js"></script>
+    <script src="js/ng-cordova.js"></script>
+    <script src="cordova.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/myJS2.js"></script>
+  </head>
+  <body ng-app="starter">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-side-menus>
+
+      <ion-side-menu-content ng-controller="NavCtrl">
+        <ion-nav-bar class="bar-positive">
+          <ion-nav-back-button class="button-icon ion-arrow-left-c">
+          </ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" ng-click="showMenu()">
+          </button>
+        </ion-nav-buttons>
+
+        <ion-nav-buttons side="right">
+          <button class="button button-icon button-clear ion-ios7-gear" ng-click="showRightMenu()">
+          </button>
+        </ion-nav-buttons>
+        <ion-nav-view animation="slide-left-right"></ion-nav-view>
+      </ion-side-menu-content>
+
+      <ion-side-menu side="left">
+        <ion-header-bar class="bar bar-header bar-assertive">
+          <h1 class="title">Location</h1>
+        </ion-header-bar>
+        <ion-content has-header="true">
+          <ul class="list">
+            <li>
+              <a class="item" menu-close nav-clear href="#/tab/dash">Home</a>
+            </li>
+            <li>
+              <a class="item" menu-close href="#/tab/chats">Add New Church</a>
+            </li>
+            <li>
+              <a class="item" menu-close href="#/tab/account">Delete Church</a>
+            </li>
+          </ul>
+        </ion-content>
+      </ion-side-menu>
+
+      <ion-side-menu side="right">
+        <ion-header-bar class="bar bar-header bar-dark">
+          <h1 class="title">Settings</h1>
+        </ion-header-bar>
+        <ion-content>
+          <ul class="list">
+            <li class="item item-toggle">
+              Select Mode
+              <label class="toggle toggle-balanced">
+                <input id="edit" type="checkbox" onchange="disableSelect()">
+                <div class="track">
+                  <div class="handle"></div>
+                </div>
+              </label>
+            </li>
+          </ul>
+
+          <form>
+            <label class = "item item-input item-select">
+              <div id="churchsDiv" class = "input-label">
+                Church
+                <select id="selectChurch" onchange="selectedChurch()">
+
+                </select>
+              </div>
+            </label>
+          </form>
+
+        </ion-content>
+      </ion-side-menu>
+
+    </ion-side-menus>
+  </body>
+
+  </html>
